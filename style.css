@@ -85,7 +85,7 @@ h3,
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.3rem 0;
   transition: var(--transition);
 }
 
@@ -108,14 +108,10 @@ h3,
 }
 
 .nav-logo {
-  height: 52px;
+  height: 90px;
   width: auto;
   display: block;
   z-index: 1002;
-  background: #1B3A0F;
-  padding: 8px 18px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(27, 58, 15, 0.35);
 }
 
 .nav-links {
@@ -328,12 +324,38 @@ h3,
   margin-bottom: 0.5rem;
 }
 
+.biothon-title-img {
+  max-width: min(100%, 900px);
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.biothon-title-img {
+  max-width: min(100%, 600px);
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .hero-title {
   font-size: clamp(3rem, 10vw, 7rem);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -2px;
-  color: var(--text-main);
+  background: linear-gradient(90deg, #ff6a00, #00e676, #00b4ff, #ff6a00);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: title-color-shift 4s linear infinite;
+}
+
+@keyframes title-color-shift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 .x-brand {
@@ -352,7 +374,7 @@ h3,
 }
 
 .hero-x-logo {
-  height: clamp(3rem, 10vw, 7rem);
+  height: clamp(5rem, 14vw, 10rem);
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 20px rgba(74, 124, 47, 0.4));
@@ -395,7 +417,7 @@ h3,
 }
 
 .text-glow {
-  text-shadow: 0 0 30px rgba(45, 80, 22, 0.3);
+  /* colour handled by parent .hero-title gradient */
 }
 
 .hero-mascot {
@@ -1036,14 +1058,14 @@ h3,
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 1.25rem 2rem;
+  padding: 1rem 2rem;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 16px;
   backdrop-filter: blur(5px);
   transition: var(--transition);
-  width: min(100%, 360px);
-  min-height: 160px;
+  width: min(100%, 380px);
+  min-height: unset;
 }
 
 .logo-item:hover {
@@ -1056,28 +1078,35 @@ h3,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
-  border-radius: 12px;
-  background: #1B3A0F;
-  width: fit-content;
+  width: 100%;
+  height: 160px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .brand-logo-img {
-  height: 60px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo-img:hover {
+  transform: scale(1.06);
+}
+
+.xinity-logo .brand-logo-img {
+  height: 150px;
 }
 
 .venue-partner {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  gap: 1.25rem;
-  padding: 32px;
+  gap: 0.75rem;
+  padding: 20px 24px;
 }
 
 .university-logos .venue-label {
@@ -1089,6 +1118,8 @@ h3,
   margin-bottom: 0;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
+  align-self: center;
+  width: 100%;
 }
 
 /* Responsive */
@@ -1148,7 +1179,7 @@ h3,
   }
 
   .nav-logo {
-    height: 40px;
+    height: 64px;
   }
 
   .nav-brand {
@@ -1179,7 +1210,7 @@ h3,
   }
 
   .hero-x-logo {
-    height: clamp(2.5rem, 15vw, 5rem);
+    height: clamp(4rem, 18vw, 8rem);
     opacity: 1 !important;
     visibility: visible !important;
     z-index: 10;
@@ -1313,13 +1344,10 @@ h3,
 }
 
 .loader-logo {
-  width: 120px;
+  width: 220px;
   height: auto;
   z-index: 10;
   animation: logo-minimize 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-  background: #1B3A0F;
-  padding: 8px 16px;
-  border-radius: 8px;
 }
 
 .loader-glow {
@@ -1335,13 +1363,13 @@ h3,
 @keyframes logo-minimize {
   0% {
     transform: scale(4);
-    filter: brightness(0.5) blur(10px);
+    filter: brightness(0.85) drop-shadow(0 0 18px rgba(45, 80, 22, 0.25));
     opacity: 0;
   }
 
   20% {
     transform: scale(2);
-    filter: brightness(1.2) blur(0);
+    filter: brightness(1.12) drop-shadow(0 0 18px rgba(45, 80, 22, 0.35));
     opacity: 1;
   }
 
@@ -1400,16 +1428,23 @@ h3,
 
 .partner-logo {
   max-width: 200px;
-  height: 40px;
-  max-height: 40px;
+  height: 80px;
+  max-height: 80px;
   width: auto;
   object-fit: contain;
-  filter: sepia(10%) brightness(95%);
-  transition: var(--transition);
+  filter: none;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo.logo-pill {
+  height: 110px;
+  max-height: 110px;
+  max-width: 300px;
 }
 
 .partner-card:hover .partner-logo {
-  filter: sepia(5%) brightness(100%);
+  transform: scale(1.06);
+  filter: none;
 }
 
 .partner-logo.unstop {
@@ -1425,14 +1460,13 @@ h3,
 }
 
 .partner-logo.xinity-community-logo {
-  height: 64px;
-  max-height: 64px;
-  max-width: 230px;
+  height: 180px;
+  max-height: 180px;
+  max-width: 420px;
 }
 
 /* Dark-pill wrapper for white-on-transparent logos */
 .logo-pill {
-  background: #1B3A0F;
   padding: 6px 12px;
   border-radius: 8px;
 }
@@ -1444,25 +1478,26 @@ h3,
 
 .partners-grid--three .partner-logo {
   height: auto;
-  max-height: 130px;
+  max-height: 160px;
   filter: none;
 }
 
 .partners-grid--three .partner-card:hover .partner-logo {
   filter: none;
+  transform: scale(1.06);
 }
 
 .partner-logo.ieee-embs {
-  max-width: 260px;
+  max-width: 300px;
 }
 
 .partner-logo.genomics-club {
-  max-width: 220px;
-  max-height: 160px;
+  max-width: 260px;
+  max-height: 190px;
 }
 
 .partner-logo.rsb {
-  max-width: 320px;
+  max-width: 360px;
 }
 
 .venue-label {
@@ -1647,11 +1682,7 @@ h3,
   }
 
   .nav-logo {
-    height: 44px;
-    padding: 6px 12px;
-    background: #1B3A0F;
-    border-radius: 12px;
-    box-shadow: 0 8px 22px rgba(27, 58, 15, 0.25);
+    height: 70px;
   }
 
   .nav-links {
@@ -1742,7 +1773,10 @@ h3,
 
   .university-logos .brand-logo-img {
     height: 54px;
-    background: #1B3A0F;
+  }
+
+  .university-logos .xinity-logo .brand-logo-img {
+    height: 110px;
   }
 
   .hero-content-block {
@@ -1766,15 +1800,13 @@ h3,
   }
 
   .hero-title {
-    color: var(--text-main);
     font-size: clamp(3.15rem, 15vw, 4.65rem);
     line-height: 1.12;
     letter-spacing: 0;
-    text-shadow: 0 0 26px rgba(45, 80, 22, 0.08);
   }
 
   .hero-x-logo {
-    height: clamp(3rem, 14vw, 4.2rem);
+    height: clamp(4.5rem, 16vw, 7rem);
     filter: drop-shadow(0 0 18px rgba(45, 80, 22, 0.28));
   }
 
