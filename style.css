@@ -2159,3 +2159,11 @@ h3,
   }
 }
 
+
+/* Mobile Navbar Logo Size adjustment */
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 40px !important;
+    width: auto !important;
+  }
+}
