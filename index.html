@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIOTHON 2026 | Marwadi University</title>
+  <link rel="icon" type="image/png" href="./assets/xinity-logo-new.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Preload critical images -->
+  <link rel="preload" as="image" href="./assets/xinity-logo-new.png" fetchpriority="high">
+  <link rel="preload" as="image" href="./assets/MU_LOGO_BLACK.png" fetchpriority="high">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="./assets/xinity-logo-new.png" alt="Xinity" class="loader-logo" fetchpriority="high"
+        decoding="async">
+      <div class="loader-glow"></div>
+    </div>
+  </div>
+
+  <div id="app">
+    <header class="navbar glass">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="./assets/xinity-logo-new.png" alt="Xinity Logo" class="nav-logo" width="132" height="60"
+            fetchpriority="high" decoding="async">
+        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#challenge">Challenge</a>
+          <a href="#rules">Rules</a>
+          <a href="https://event.xinity.in/register.html?event=EVT-RDMC0Y" class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer">Login</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-background">
+          <div class="glow-sphere brown"></div>
+          <div class="glow-sphere green"></div>
+          <div class="glow-sphere highlight"></div>
+          <!-- Hex background texture -->
+          <svg class="bio-hex-bg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="hexPat" width="52" height="90" patternUnits="userSpaceOnUse">
+                <path d="M26,0 L52,15 L52,45 L26,60 L0,45 L0,15 Z" fill="none" stroke="#2D5016" stroke-width="0.7"/>
+                <path d="M0,45 L26,60 L26,90" fill="none" stroke="#2D5016" stroke-width="0.7"/>
+                <path d="M52,45 L52,90 M26,60 L26,90" fill="none" stroke="#2D5016" stroke-width="0.7"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#hexPat)"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="hero-content-block">
+            <p class="hero-eyebrow">Dept. of Bioinformatics, Marwadi University Presents</p>
+            <div class="hero-title-container">
+              <img src="./assets/biothon-logo.png" alt="BIOTHON 2026" class="biothon-title-img">
+            </div>
+            <div class="hero-stats-row">
+              <span class="hero-stat-pill">3 DOMAINS</span>
+              <span class="hero-stat-sep">|</span>
+              <span class="hero-stat-pill">20 CHALLENGES</span>
+              <span class="hero-stat-sep">|</span>
+              <span class="hero-stat-pill">BUILDING FOR IMPACT</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-container">
+            <a href="https://event.xinity.in/register.html?event=EVT-RDMC0Y"
+              class="btn btn-primary btn-premium-glow" target="_blank" rel="noopener noreferrer">REGISTER NOW <i
+                data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cell / molecule ring divider -->
+      <div class="bio-divider" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#2D5016" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="60" r="36" fill="none" stroke="#8B4513" stroke-width="1"/>
+          <circle cx="60" cy="60" r="19" fill="rgba(45,80,22,0.08)" stroke="#2D5016" stroke-width="1"/>
+          <circle cx="60" cy="60" r="7"  fill="rgba(45,80,22,0.15)" stroke="#4A7C2F" stroke-width="0.8"/>
+          <circle cx="32" cy="37" r="4"  fill="none" stroke="#2D5016" stroke-width="1"/>
+          <circle cx="90" cy="44" r="5"  fill="none" stroke="#8B4513" stroke-width="1"/>
+          <circle cx="37" cy="84" r="3"  fill="none" stroke="#4A7C2F" stroke-width="1"/>
+          <circle cx="86" cy="79" r="4"  fill="none" stroke="#2D5016" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <section id="about" class="content-section bg-card">
+        <div class="container grid-two-cols">
+          <div class="section-content">
+            <h2 class="section-title">ABOUT THE EVENT</h2>
+            <div class="glass-card">
+              <p>BIOTHON 2026 is a national-level hackathon organized by the Department of Bioinformatics at Marwadi
+                University, sponsored by the Royal Society of Biology and IEEE EMBS. Participants design and develop
+                fully functional, visually stunning solutions across Biology, Healthcare, Agriculture, and Environment
+                domains.</p>
+            </div>
+          </div>
+          <div class="section-image">
+            <picture>
+              <img src="./assets/gif2.png" alt="Xinity Hackathon" class="floating-bot-img" width="450" height="450"
+                loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Molecule ring divider -->
+      <div class="bio-divider bio-divider--alt" aria-hidden="true">
+        <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+          <!-- Central atom -->
+          <circle cx="80" cy="40" r="14" fill="rgba(45,80,22,0.1)" stroke="#2D5016" stroke-width="1.2"/>
+          <circle cx="80" cy="40" r="5"  fill="rgba(45,80,22,0.2)" stroke="#4A7C2F" stroke-width="0.8"/>
+          <!-- Orbital rings -->
+          <ellipse cx="80" cy="40" rx="56" ry="18" fill="none" stroke="#8B4513" stroke-width="0.9" transform="rotate(0 80 40)"/>
+          <ellipse cx="80" cy="40" rx="56" ry="18" fill="none" stroke="#2D5016" stroke-width="0.9" transform="rotate(60 80 40)"/>
+          <ellipse cx="80" cy="40" rx="56" ry="18" fill="none" stroke="#4A7C2F" stroke-width="0.9" transform="rotate(-60 80 40)"/>
+          <!-- Electron dots -->
+          <circle cx="136" cy="40" r="4" fill="#8B4513"/>
+          <circle cx="24"  cy="40" r="4" fill="#2D5016"/>
+          <circle cx="108" cy="9"  r="4" fill="#4A7C2F"/>
+          <circle cx="52"  cy="71" r="4" fill="#8B4513"/>
+        </svg>
+      </div>
+
+      <section id="challenge" class="content-section">
+        <div class="container">
+          <h2 class="section-title">THE DOMAINS</h2>
+          <div class="rules-grid">
+            <div class="logo-item rule-box">
+              <h3 class="card-subtitle">HEALTH CARE</h3>
+              <p class="card-status">DOMAIN 1</p>
+              <p>5 challenges spanning AI diagnostics, wearable sensors, hospital management, digital mental health, and multilingual public health chatbots.</p>
+            </div>
+            <div class="logo-item rule-box">
+              <h3 class="card-subtitle">AGRICULTURE</h3>
+              <p class="card-status">DOMAIN 2</p>
+              <p>5 challenges covering AI crop disease detection, smart irrigation, direct farmer marketplaces, advisory systems, and precision farming.</p>
+            </div>
+            <div class="logo-item rule-box">
+              <h3 class="card-subtitle">BIODIVERSITY &amp; ENVIRONMENT</h3>
+              <p class="card-status">DOMAIN 3</p>
+              <p>10 challenges across marine AI platforms, eDNA taxonomy, commodity price prediction, ocean data chatbots, deepfake detection, Ganga water forecasting, green hydrogen modelling, blockchain carbon registries, water footprint tracking, and MSW waste-to-energy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problems" class="content-section bg-card">
+        <div class="container">
+          <h2 class="section-title">PROBLEM STATEMENTS</h2>
+
+          <!-- Health Care -->
+          <div class="rules-grid" style="margin-bottom:3rem;">
+            <div class="glass-card rule-box wide-card" style="margin-bottom:1rem;">
+              <h3 class="card-subtitle">HEALTH CARE</h3>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 01</p>
+              <h3 class="round-date">Wearable AI Sensor for Fall Prevention in Elderly</h3>
+              <p>Design a wearable device with AI algorithms that detects when a senior's centre of gravity shifts dangerously, providing real-time tactile, audio, and visual alerts to prevent falls before they happen.</p>
+              <p class="team-community" style="margin-top:1rem;">Wearable &nbsp;|&nbsp; AI/ML &nbsp;|&nbsp; Elderly Care &nbsp;|&nbsp; IMU Sensors</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 02</p>
+              <h3 class="round-date">Digital Mental Health &amp; Psychological Support System for Students</h3>
+              <p>Create a digital platform offering mental health resources, mood tracking, anonymous counselling connections, and AI-based early warning for students in higher education facing psychological distress.</p>
+              <p class="team-community" style="margin-top:1rem;">Mental Health &nbsp;|&nbsp; AI Screening &nbsp;|&nbsp; Students &nbsp;|&nbsp; Anonymous Platform</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 03</p>
+              <h3 class="round-date">Non-Invasive Blood Vessel Blockage Detection</h3>
+              <p>Develop a cost-effective, non-invasive technology to detect blockages in blood vessels without radioactive contrast agents — making vascular diagnostics safer and more accessible in rural clinics.</p>
+              <p class="team-community" style="margin-top:1rem;">BioTech &nbsp;|&nbsp; Medical Device &nbsp;|&nbsp; Non-invasive &nbsp;|&nbsp; Diagnostics</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 04</p>
+              <h3 class="round-date">Queuing &amp; Bed Management System for Hospital OPDs</h3>
+              <p>A smart hospital management solution integrating queuing models for OPDs, real-time bed availability, patient admission tracking, and medicine inventory — reducing wait times and improving workflow.</p>
+              <p class="team-community" style="margin-top:1rem;">Hospital Management &nbsp;|&nbsp; Real-time &nbsp;|&nbsp; Dashboard &nbsp;|&nbsp; Queue Optimisation</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 05</p>
+              <h3 class="round-date">AI-Driven Public Health Chatbot for Disease Awareness</h3>
+              <p>Build a conversational AI chatbot that educates citizens about disease prevention, symptoms, and nearest healthcare resources — deployable in regional languages for rural populations.</p>
+              <p class="team-community" style="margin-top:1rem;">NLP Chatbot &nbsp;|&nbsp; Multilingual &nbsp;|&nbsp; Public Health</p>
+            </div>
+          </div>
+
+          <!-- Agriculture -->
+          <div class="rules-grid" style="margin-bottom:3rem;">
+            <div class="glass-card rule-box wide-card" style="margin-bottom:1rem;">
+              <h3 class="card-subtitle">AGRICULTURE</h3>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 01</p>
+              <h3 class="round-date">Farmers Disease Diagnostic / Reporting Portal</h3>
+              <p>An AI-powered mobile portal where farmers photograph disease symptoms on crops or livestock, receive AI diagnosis and suggested treatments, and alerts are sent to the nearest veterinarian or agri expert.</p>
+              <p class="team-community" style="margin-top:1rem;">AI Diagnosis &nbsp;|&nbsp; Image Recognition &nbsp;|&nbsp; Mobile &nbsp;|&nbsp; Alert System</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 02</p>
+              <h3 class="round-date">Smart Irrigation System for Precision Farming</h3>
+              <p>Design an IoT + sensor-based system to monitor real-time soil moisture and weather, then auto-schedule irrigation — reducing water wastage and maximising crop yield through a mobile dashboard.</p>
+              <p class="team-community" style="margin-top:1rem;">IoT &nbsp;|&nbsp; Water Conservation &nbsp;|&nbsp; Sensors &nbsp;|&nbsp; Dashboard</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 03</p>
+              <h3 class="round-date">Mobile / Web App for Direct Market Access for Farmers</h3>
+              <p>Connect farmers directly with consumers and retailers through a marketplace app eliminating middlemen, enabling price negotiation, produce listing, and secure transaction management.</p>
+              <p class="team-community" style="margin-top:1rem;">Marketplace &nbsp;|&nbsp; Agri Commerce &nbsp;|&nbsp; Mobile</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 04</p>
+              <h3 class="round-date">Smart Crop Advisory System for Small &amp; Marginal Farmers</h3>
+              <p>Create an advisory platform that recommends crop types, planting schedules, and practices tailored to small farmers' land size, soil data, and local weather — bridging the knowledge gap in rural India.</p>
+              <p class="team-community" style="margin-top:1rem;">Advisory System &nbsp;|&nbsp; Farmer App &nbsp;|&nbsp; Data Analytics</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 05</p>
+              <h3 class="round-date">AI-Driven Crop Disease Prediction &amp; Management System</h3>
+              <p>Develop an AI system that analyses crop images and environmental data to predict disease outbreaks early, giving farmers actionable treatment recommendations via a mobile or web app.</p>
+              <p class="team-community" style="margin-top:1rem;">AI/ML &nbsp;|&nbsp; Computer Vision &nbsp;|&nbsp; Web App &nbsp;|&nbsp; Real-time Data</p>
+            </div>
+          </div>
+
+          <!-- Biodiversity & Environment -->
+          <div class="rules-grid">
+            <div class="glass-card rule-box wide-card" style="margin-bottom:1rem;">
+              <h3 class="card-subtitle">BIODIVERSITY &amp; ENVIRONMENT</h3>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 01</p>
+              <h3 class="round-date">AI-Driven Unified Data Platform for Oceanographic &amp; Fisheries Insights</h3>
+              <p>Build a unified AI platform integrating oceanographic datasets, fisheries records and molecular biodiversity data providing predictive insights on fish migration, marine health and sustainable fishing zones.</p>
+              <p class="team-community" style="margin-top:1rem;">AI Platform &nbsp;|&nbsp; Big Data &nbsp;|&nbsp; Geospatial ML &nbsp;|&nbsp; Marine Science</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 02</p>
+              <h3 class="round-date">Identifying Taxonomy and Assessing Biodiversity from eDNA Datasets</h3>
+              <p>Use environmental DNA (eDNA) sequencing data to identify species taxonomy and assess biodiversity in aquatic ecosystems — a bioinformatics pipeline combining sequence alignment, ML classification and ecological reporting.</p>
+              <p class="team-community" style="margin-top:1rem;">Bioinformatics &nbsp;|&nbsp; eDNA &nbsp;|&nbsp; ML Classification &nbsp;|&nbsp; Biodiversity</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 03</p>
+              <h3 class="round-date">AI/ML Models for Predicting Prices of Agricultural Commodities</h3>
+              <p>Develop predictive models for forecasting prices of pulses and vegetables (onion, potato, tomato) using historical trends, seasonality, market intelligence and satellite crop data powering smarter government interventions.</p>
+              <p class="team-community" style="margin-top:1rem;">Time-series ML &nbsp;|&nbsp; ARIMA &nbsp;|&nbsp; Price Prediction &nbsp;|&nbsp; Data Science</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 04</p>
+              <h3 class="round-date">FloatChat — AI Conversational Interface for Ocean Data Discovery</h3>
+              <p>Create a natural language chatbot interface that lets researchers and citizens query and visualise oceanographic data from ARGO floats making complex scientific datasets accessible through plain-English conversation.</p>
+              <p class="team-community" style="margin-top:1rem;">LLM &nbsp;|&nbsp; Data Visualisation &nbsp;|&nbsp; Science Portal</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 05</p>
+              <h3 class="round-date">AI/ML Solution for Detecting Face-Swap Deepfake Videos</h3>
+              <p>Build a deep learning model that detects face-swap deepfake videos by analysing spatial, temporal and frequency anomalies outputting a detailed forensic report on whether a video is authentic or manipulated.</p>
+              <p class="team-community" style="margin-top:1rem;">Deep Learning &nbsp;|&nbsp; CNN/RNN &nbsp;|&nbsp; Computer Vision &nbsp;|&nbsp; Cybersecurity</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 06</p>
+              <h3 class="round-date">Real-time Ganga River Water Quality Forecasting using AI and IoT</h3>
+              <p>Build an AI-enabled Decision Support System integrating satellite data, IoT sensors and hydrological models to forecast Ganga water quality (DO, BOD, pathogens) 3–5 days ahead with public mobile dashboard and alerts.</p>
+              <p class="team-community" style="margin-top:1rem;">Satellite Data &nbsp;|&nbsp; IoT &nbsp;|&nbsp; Water Quality &nbsp;|&nbsp; AI/DSS</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 07</p>
+              <h3 class="round-date">Industrial-Scale Green Hydrogen Production Facility Concept</h3>
+              <p>Design a detailed concept for a green hydrogen facility producing 50+ tonnes/day at under $2/kg levelised cost including electrolyser sizing, renewable energy model, CAPEX/OPEX breakdown and carbon credit estimation.</p>
+              <p class="team-community" style="margin-top:1rem;">Green Energy &nbsp;|&nbsp; Techno-Economics &nbsp;|&nbsp; Hydrogen &nbsp;|&nbsp; Modelling</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 08</p>
+              <h3 class="round-date">Blockchain-Based Blue Carbon Registry &amp; MRV System</h3>
+              <p>Create a blockchain-based registry to measure, report and verify (MRV) blue carbon stored in coastal ecosystems (mangroves, seagrass) enabling transparent carbon credit issuance and climate finance tracking.</p>
+              <p class="team-community" style="margin-top:1rem;">Blockchain &nbsp;|&nbsp; Carbon Credits &nbsp;|&nbsp; Climate Tech &nbsp;|&nbsp; Coastal Ecology</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 09</p>
+              <h3 class="round-date">Digital Water Footprint Calculator for Agricultural Products</h3>
+              <p>Develop a user-friendly web/mobile app where users scan or enter food items to instantly learn their water footprint driving awareness about virtual water consumption in agriculture and promoting conservation behaviour.</p>
+              <p class="team-community" style="margin-top:1rem;">Sustainability App &nbsp;|&nbsp; AI Scan &nbsp;|&nbsp; Water Conservation &nbsp;|&nbsp; Education</p>
+            </div>
+            <div class="glass-card rule-box">
+              <p class="card-status">CHALLENGE 10</p>
+              <h3 class="round-date">Waste to Energy — Innovative MSW Recycling and Community Solution</h3>
+              <p>Design a community-based digital tracking and management system for municipal solid waste from segregation at source through collection, recycling and conversion to bioenergy, with landfill gas monitoring.</p>
+              <p class="team-community" style="margin-top:1rem;">Waste Management &nbsp;|&nbsp; IoT &nbsp;|&nbsp; Tracking &nbsp;|&nbsp; Dashboard</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="rules" class="content-section bg-card">
+        <div class="container">
+          <h2 class="section-title">RULES</h2>
+          <div class="rounds-grid">
+            <div class="round-card glass-card">
+              <div class="round-number">ROUND 01</div>
+              <span class="round-status-badge">Pending</span>
+              <h3 class="round-card-title">PPT Submission</h3>
+              <p class="round-card-date">1st June 2026</p>
+              <p class="round-card-desc">Teams submit their problem understanding, proposed solution, technology stack, and expected outcomes through the official presentation template for evaluation.</p>
+            </div>
+            <div class="round-card glass-card">
+              <div class="round-number">ROUND 02</div>
+              <span class="round-status-badge">Pending</span>
+              <h3 class="round-card-title">Video Submission</h3>
+              <p class="round-card-date">15th June 2026</p>
+              <p class="round-card-desc">Shortlisted teams submit a detailed walkthrough video explaining their solution, innovation, implementation approach, and team understanding.</p>
+            </div>
+            <div class="round-card glass-card">
+              <div class="round-number">ROUND 03</div>
+              <span class="round-status-badge">Pending</span>
+              <h3 class="round-card-title">Grand Finale (Offline)</h3>
+              <p class="round-card-date">4th July 2026</p>
+              <p class="round-card-location">Marwadi University, Rajkot, Gujarat</p>
+              <p class="round-card-desc">Finalist teams present their live working prototype, solution pitch, and implementation before an expert judging panel during the offline finale event.</p>
+            </div>
+          </div>
+
+          <div class="rules-list-container glass-card" style="margin-top: 3rem;">
+            <ul class="rules-list">
+              <li>Open to all developers, designers, and students — teams of 2–4 members.</li>
+              <li>All participants must be currently enrolled college students.</li>
+              <li>Inter-college and inter-specialization teams are allowed.</li>
+              <li>One member must be designated as the Team Lead for all communication.</li>
+              <li>A participant cannot register in more than one team.</li>
+              <li>Team composition cannot be changed after registration is confirmed.</li>
+              <li>Round 1: Submit your solution concept using the official BIOTHON 2026 template in PDF format before the deadline.</li>
+              <li>Round 2: Selected teams must present a fully functional, working solution to the judges in-person at Marwadi University.</li>
+              <li>All team members must be present on the day of Round 2.</li>
+              <li>Late submissions will not be accepted under any circumstances.</li>
+              <li>AI tools are officially allowed for design, ideation, and development.</li>
+              <li>All submitted work must be 100% original — plagiarism will result in immediate disqualification.</li>
+              <li>Judges' decisions are final and binding.</li>
+              <li>Respectful behaviour toward all judges, organizers, and participants is mandatory at all times.
+                <div style="margin-top: 1.5rem;">
+                  <a href="/BIOTHON 2026 OFFICIAL PPT TEMPLATE.pptx" class="btn-download" download="BIOTHON 2026 OFFICIAL PPT TEMPLATE.pptx">
+                    <i data-lucide="download"></i> DOWNLOAD TEMPLATE
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="prizes" class="content-section">
+        <div class="container">
+          <h2 class="section-title">PRIZES PER DOMAIN</h2>
+          <div class="winners-list">
+            <div class="winner-item">
+              <i data-lucide="trophy" class="icon icon-accent"></i>
+              <p><strong>1st Prize</strong> — ₹30,000 Cash &nbsp;·&nbsp; Awarded in each of the 3 domains</p>
+            </div>
+            <div class="winner-item">
+              <i data-lucide="medal" class="icon icon-accent"></i>
+              <p><strong>2nd Prize</strong> — ₹20,000 Cash &nbsp;·&nbsp; Awarded in each of the 3 domains</p>
+            </div>
+            <div class="winner-item">
+              <i data-lucide="award" class="icon icon-accent"></i>
+              <p><strong>3rd Prize</strong> — ₹10,000 Cash &nbsp;·&nbsp; Awarded in each of the 3 domains</p>
+            </div>
+            <div class="winner-item">
+              <i data-lucide="indian-rupee" class="icon icon-accent"></i>
+              <p><strong>Total Prize Pool — ₹1,80,000</strong> across Health Care, Agriculture &amp; Biodiversity domains</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="content-section bg-card">
+        <div class="container">
+          <h2 class="section-title">HOST PARTNERS</h2>
+          <div class="partners-grid">
+            <div class="partner-card glass-card">
+              <div class="venue-label">VENUE PARTNER</div>
+              <img src="./assets/MU_LOGO_BLACK.png" alt="Marwadi University" class="partner-logo logo-pill" style="max-width:200px;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="collab-partners" class="content-section">
+        <div class="container">
+          <h2 class="section-title">COLLABORATIVE PARTNERS</h2>
+          <div class="partners-grid">
+            <div class="partner-card glass-card">
+              <div class="venue-label">TECH COMMUNITY</div>
+              <img src="./assets/xinity-logo-new.png" alt="Xinity Tech Community" class="partner-logo logo-pill xinity-community-logo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Molecule ring divider -->
+      <div class="bio-divider" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#2D5016" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="60" r="36" fill="none" stroke="#8B4513" stroke-width="1"/>
+          <circle cx="60" cy="60" r="19" fill="rgba(45,80,22,0.08)" stroke="#2D5016" stroke-width="1"/>
+          <circle cx="60" cy="60" r="7"  fill="rgba(45,80,22,0.15)" stroke="#4A7C2F" stroke-width="0.8"/>
+          <circle cx="28" cy="42" r="4"  fill="none" stroke="#8B4513" stroke-width="1"/>
+          <circle cx="92" cy="48" r="5"  fill="none" stroke="#2D5016" stroke-width="1"/>
+          <circle cx="42" cy="88" r="3"  fill="none" stroke="#4A7C2F" stroke-width="1"/>
+          <circle cx="88" cy="76" r="4"  fill="none" stroke="#8B4513" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <section id="knowledge-partners" class="content-section bg-card">
+        <div class="container">
+          <h2 class="section-title">PARTNERS</h2>
+          <div class="partners-grid partners-grid--three">
+            <div class="partner-card glass-card">
+              <img src="./assets/rsb-logo-original.png" alt="Royal Society of Biology" class="partner-logo rsb">
+            </div>
+            <div class="partner-card glass-card">
+              <img src="./assets/ieee-embs-original.png" alt="IEEE EMBS" class="partner-logo ieee-embs">
+            </div>
+            <div class="partner-card glass-card">
+              <img src="./assets/genomics-club-original.png" alt="Genomics Club" class="partner-logo genomics-club">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="participate" class="content-section bg-card">
+        <div class="container text-center">
+          <h2 class="section-title center">WHO CAN PARTICIPATE?</h2>
+          <div class="glass-card compact-card">
+            <p>Open to all developers, designers, and students. Teams of 2–4 members. Inter-college teams are welcome across all three domains — Health Care, Agriculture, and Biodiversity &amp; Environment.</p>
+            <div class="bot-search">
+              <i data-lucide="search" class="search-icon"></i>
+            </div>
+          </div>
+          <div class="cta-container">
+            <a href="https://event.xinity.in/register.html?event=EVT-RDMC0Y"
+              class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">REGISTER NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="organizing-team" class="content-section">
+        <div class="container text-center">
+          <h2 class="section-title center">ORGANIZING TEAM</h2>
+          <div class="team-slider-wrapper">
+            <div class="team-slider">
+              <!-- Original Track -->
+              <div class="team-track">
+                <div class="team-card glass-card">
+                  <div class="team-img-wrapper">
+                    <img src="./assets/SHIVAM.jpeg" alt="Shivam Pandey" class="team-img" loading="lazy"
+                      decoding="async">
+                  </div>
+                  <h3 class="team-name">Shivam Pandey</h3>
+                  <p class="team-role">Tech Head</p>
+                  <p class="team-community">Xinity Hackathon Community</p>
+                  <div class="team-social">
+                    <a href="https://www.linkedin.com/in/shivampandeyrj/" target="_blank" rel="noopener noreferrer"
+                      class="social-link" aria-label="LinkedIn Profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="team-card glass-card">
+                  <div class="team-img-wrapper">
+                    <img src="./assets/SAMIM.jpeg" alt="Samim Mondal" class="team-img" loading="lazy" decoding="async">
+                  </div>
+                  <h3 class="team-name">Samim Mondal</h3>
+                  <p class="team-role">Design Head</p>
+                  <p class="team-community">Xinity Hackathon Community</p>
+                  <div class="team-social">
+                    <a href="https://www.linkedin.com/in/samim-mondal-8a8933374/" target="_blank"
+                      rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Duplicate Track for Infinite Loop -->
+              <div class="team-track" aria-hidden="true">
+                <div class="team-card glass-card">
+                  <div class="team-img-wrapper">
+                    <img src="./assets/SHIVAM.jpeg" alt="Shivam Pandey" class="team-img" loading="lazy"
+                      decoding="async">
+                  </div>
+                  <h3 class="team-name">Shivam Pandey</h3>
+                  <p class="team-role">Tech Head</p>
+                  <p class="team-community">Xinity Hackathon Community</p>
+                  <div class="team-social">
+                    <a href="https://www.linkedin.com/in/shivampandeyrj/" target="_blank" rel="noopener noreferrer"
+                      tabindex="-1" class="social-link" aria-label="LinkedIn Profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="team-card glass-card">
+                  <div class="team-img-wrapper">
+                    <img src="./assets/SAMIM.jpeg" alt="Samim Mondal" class="team-img" loading="lazy" decoding="async">
+                  </div>
+                  <h3 class="team-name">Samim Mondal</h3>
+                  <p class="team-role">Design Head</p>
+                  <p class="team-community">Xinity Hackathon Community</p>
+                  <div class="team-social">
+                    <a href="https://www.linkedin.com/in/samim-mondal-8a8933374/" target="_blank"
+                      rel="noopener noreferrer" tabindex="-1" class="social-link" aria-label="LinkedIn Profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="social-community" class="content-section bg-card">
+        <div class="container linkedin-container">
+          <h2 class="section-title center">STAY UPDATED</h2>
+
+          <div class="linkedin-card glass-card">
+            <div class="linkedin-header">
+              <div class="linkedin-brand">
+                <div class="linkedin-logo-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </div>
+                <div class="linkedin-info">
+                  <h3>Xinity Hackathon Community</h3>
+                  <p>@xinity-hackathon-community</p>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/company/xinity-hackathon-community/posts/?feedView=all" target="_blank"
+                class="btn-linkedin">
+                <i data-lucide="plus"></i> FOLLOW
+              </a>
+            </div>
+
+            <div class="linkedin-body">
+              <div class="mock-post">
+                <div class="post-meta">
+                  <span class="post-tag">FEATURED POST</span>
+                  <span>• 2 days ago</span>
+                </div>
+                <div class="post-content">
+                  🧬 BIOTHON 2026 is here! India's national-level bioinformatics hackathon — 3 domains, 15 challenges, ₹1,80,000 in prizes. Organized by the Dept. of Bioinformatics, Marwadi University. Register now and build for impact! 🌱 #BIOTHON2026 #Bioinformatics #MarwadiUniversity #BuildingForImpact
+                </div>
+                <div class="post-stats">
+                  <div class="stat-item">
+                    <i data-lucide="heart"></i> 482
+                  </div>
+                  <div class="stat-item">
+                    <i data-lucide="message-square"></i> 24
+                  </div>
+                  <div class="stat-item">
+                    <i data-lucide="share-2"></i> 12
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 1rem;">
+              <a href="https://www.linkedin.com/company/xinity-hackathon-community/posts/?feedView=all" target="_blank"
+                style="color: var(--primary-green); text-decoration: none; font-size: 0.9rem; font-weight: 600;">
+                VIEW ALL POSTS ON LINKEDIN <i data-lucide="external-link"
+                  style="width: 14px; height: 14px; vertical-align: middle;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
