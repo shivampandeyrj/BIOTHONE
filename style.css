@@ -2138,6 +2138,27 @@ h3,
   color: #fff;
 }
 
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(220, 39, 67, 0.3);
+}
+
+.instagram-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(220, 39, 67, 0.4);
+  color: #fff;
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
