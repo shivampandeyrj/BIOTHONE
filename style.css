@@ -2162,13 +2162,13 @@ h3,
   .marquee {
     order: 1;
     padding: 4px 0;
-    width: 100%;
+    width: max-content;
   }
   .announcement-item {
     font-size: 0.75rem;
   }
   .marquee {
-    animation-duration: 12s;
+    animation-duration: 15s;
   }
 }
 
