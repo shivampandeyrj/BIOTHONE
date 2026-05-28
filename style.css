@@ -2149,7 +2149,20 @@ h3,
 
 @media (max-width: 768px) {
   .announcement-bar {
-    height: 36px;
+    height: auto;
+    flex-direction: column;
+  }
+  .static-announcement {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    padding: 6px 0 !important;
+    font-size: 0.85rem;
+  }
+  .marquee {
+    order: 1;
+    padding: 4px 0;
+    width: 100%;
   }
   .announcement-item {
     font-size: 0.75rem;
