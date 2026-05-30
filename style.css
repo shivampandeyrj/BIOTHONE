@@ -2083,6 +2083,7 @@ h3,
   display: flex;
   width: max-content;
   animation: scroll-left 25s linear infinite;
+  will-change: transform;
 }
 
 .marquee:hover {
@@ -2183,10 +2184,10 @@ h3,
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
